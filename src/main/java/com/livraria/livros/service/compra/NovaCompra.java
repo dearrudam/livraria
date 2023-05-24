@@ -29,7 +29,7 @@ public class NovaCompra {
         var compra = new CompraModel();
         for (var item: itens) {
             var newItem = item.toModel(repository);
-            compra.getItens().add(newItem);
+            compra.addItem(newItem);
         }
         compra.getCupons().addAll(cupons);
         return compra;
