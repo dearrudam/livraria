@@ -34,7 +34,7 @@ public class CompraModel {
 
 
     public void addItem(ItemCompra item) {
-        this.addItem(item);
+        this.itens.add(item);
         var total = BigDecimal.ZERO;
         for (var i:this.itens) {
             total = total.add(i.getTotal());
